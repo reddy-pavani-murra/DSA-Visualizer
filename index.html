@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DSA Visualizer</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="main-container">
+
+        <h1>DSA Visualizer</h1>
+
+        <div class="controls">
+
+            <button onclick="generateArray()">Generate Array</button>
+
+            <button onclick="bubbleSort()">Bubble Sort</button>
+
+            <button onclick="selectionSort()">Selection Sort</button>
+
+            <button onclick="mergeSortStart()">Merge Sort</button>
+
+            <button onclick="binarySearch()">Binary Search</button>
+
+            <button onclick="pauseSorting()">Pause</button>
+
+            <button onclick="resetArray()">Reset</button>
+
+        </div>
+
+        <div class="input-box">
+
+            <input type="text"
+                   id="customArray"
+                   placeholder="Enter numbers like 5 2 8 1">
+
+            <button onclick="useCustomArray()">
+                Use Custom Array
+            </button>
+
+        </div>
+
+        <div class="speed-box">
+
+            <label>Speed :</label>
+
+            <input type="range" min="20" max="300" value="80" id="speedRange">
+
+        </div>
+
+        <div class="stats-box">
+
+            <div class="stat-card">
+                <h3>Comparisons</h3>
+                <p id="comparisons">0</p>
+            </div>
+
+            <div class="stat-card">
+                <h3>Swaps</h3>
+                <p id="swaps">0</p>
+            </div>
+
+        </div>
+
+        <div class="info-box">
+
+            <h2 id="algo-name">Algorithm Info</h2>
+
+            <p id="algo-info">
+                Select an algorithm to visualize.
+            </p>
+
+        </div>
+
+        <div id="array-container"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
